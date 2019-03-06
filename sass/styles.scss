@@ -1,0 +1,30 @@
+@import "variables";
+@import "stil";
+
+header{
+  padding: $paddito;
+  background-color: pink;
+}
+
+// Uso del ciclo
+$i: 0;
+$refcolors: indigo, purple, fuchsia, cyan, green, yellow,orange,red;
+
+@each $c in $refcolors {
+    $i: $i + 1;
+    .cell0#{$i} {
+      @include styler(c0#{$i},$c);
+    }   
+}
+
+.cellmain{
+  @include styler(cent, white);
+  border: solid 5px black;
+}
+
+.container{
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  grid-template-areas: $gridd;
+  grid-gap: 10px;
+}

@@ -1,0 +1,68 @@
+header {
+  padding: 20px;
+  background-color: pink;
+}
+
+.cell01 {
+  background-color: indigo;
+  grid-area: c01;
+  font-size: 40px;
+}
+
+.cell02 {
+  background-color: purple;
+  grid-area: c02;
+  font-size: 40px;
+}
+
+.cell03 {
+  background-color: fuchsia;
+  grid-area: c03;
+  font-size: 40px;
+}
+
+.cell04 {
+  background-color: cyan;
+  grid-area: c04;
+  font-size: 40px;
+}
+
+.cell05 {
+  background-color: green;
+  grid-area: c05;
+  font-size: 40px;
+}
+
+.cell06 {
+  background-color: yellow;
+  grid-area: c06;
+  font-size: 40px;
+}
+
+.cell07 {
+  background-color: orange;
+  grid-area: c07;
+  font-size: 40px;
+}
+
+.cell08 {
+  background-color: red;
+  grid-area: c08;
+  font-size: 40px;
+}
+
+.cellmain {
+  background-color: white;
+  grid-area: cent;
+  font-size: 40px;
+  border: solid 5px black;
+}
+
+.container {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+  grid-template-areas: "c01 c02 c03" "c04 cent c05" "c06 c07 c08";
+  grid-gap: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,5 @@
+@mixin styler($area, $color){
+  background-color:$color;
+        grid-area: $area;
+        font-size: 40px;
+}
